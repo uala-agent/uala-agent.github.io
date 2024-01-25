@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="Towards Uncertainty-Aware Language Agent"/>
+  <meta property="og:description" content="Uncertainty-Aware Language Agent (UALA)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Towards Uncertainty-Aware Language Agent</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://kit.fontawesome.com/deb78776bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Towards Uncertainty-Aware Language Agent</h1>
+            <br>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jiuzhouh.github.io" target="_blank">Jiuzhou Han</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://bayesian-models.org" target="_blank">Wray Buntine</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="https://eehsan.github.io" target="_blank">Ehsan Shareghi</a><sup>1</sup>,</span>
+                </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Department of Data Science & AI, Monash University<sup>1</sup>, <br> College of Engineering and Computer Science, VinUniversity<sup>2</sup></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2310.05915" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary Model link -->
+                    <!-- <span class="link-block">
+                      <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fa-regular fa-box-archive"></i>
+                      </span>
+                      <span>Model</span>
+                    </a>
+                  </span> -->
+
+                    <!-- Supplementary data link -->
+                    <span class="link-block">
+                      <a href="https://github.com/Jiuzhouh/Uncertainty-Aware-Language-Agent/tree/main/data" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fa fa-database"></i>
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Jiuzhouh/Uncertainty-Aware-Language-Agent" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="item has-text-centered">
+      <img src="static/images/uala_framework.png" alt="Teaser image" class="teaser-image" width="70%">
+      </div>
+      <br>
+      <h2 class="subtitle has-text-justified">
+        Language Agents utilising Large Language Models to interact with the external world (e.g., through tools) to process collected observations towards solving a task have achieved great improvements in challenging reasoning tasks. A more effective design for language agents should have a better interplay between the implicit knowledge encoded in LLM's weight and the explicit knowledge of the external world. To this end, we present Uncertainty-Aware Language Agent that integrates uncertainty in language agent's cycle of Thought, Action, and Observation. The uncertainty moderates the interaction between the LLM and the external world, facilitating a more effective and efficient dynamic.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>While Language Agents have achieved promising success by placing Large Language Models at the core of a more versatile design that dynamically interacts with the external world, the existing approaches neglect the notion of uncertainty during these interactions. We present the Uncertainty-Aware Language Agent (UALA), a framework that orchestrates the interaction between the agent and the external world using uncertainty quantification. Compared with other well-known counterparts like ReAct, our extensive experiments across 3 representative tasks (HotpotQA, StrategyQA, MMLU) and various LLM sizes demonstrates that UALA brings a significant improvement of performance, while having a substantially lower reliance on the external world (i.e., reduced number of tool calls and tokens). Our analyses provide various insights including the great potential of UALA compared with agent fine-tuning, and underscoring the unreliably of verbalised confidence of LLMs as a proxy for uncertainty.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Trajectories -->
+<section class="section" id="">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Examples of Single-inference UALA Trajectories</h2>
+    <div class="item has-text-centered">
+      <img src="static/images/example-uala.png" alt="Teaser image" class="teaser-image" width="100%">
+      </div>
+      <p>Examples of single-inference UALA trajectories from HotpotQA. Example (a) illustrates the trajectory where CoT answer falls inside the certainty region. Example (b) is the trajectory where CoT is too uncertain and tool is activated, arriving at a final response which falls in the acceptable certainty region (denoted by UALA-S and UALA-M in our results). Example (c) is the trajectory where both CoT and tool-generated responses are considered  uncertain, and the agent asks help from human (denoted by UALA-S+Oracle in our results).
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="section" id="">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Uncertainty Estimation</h2>
+      <p>Uncertainty estimation methods are broadly categorised into two types: single-inference based and multi-inference based. </p>
+      <p> <strong>Single-inference.</strong> Single-inference uncertainty estimation calculates the uncertainty based on one output, necessitating access to the token log-probabilities within that output. The methods vary based on the answer being a single-token (e.g., yes or no) or free-form (multi-token) format.</p>
+      <p> <strong>Multi-inference.</strong> Multi-inference uncertainty estimation calculates the uncertainty of an answer based on multiple outputs from an LLM, eliminating the need for individual token log-probabilities.</p>
+      <p><strong>Uncertainty Threshold.</strong> The decision to accept an answer or resort to alternative mechanisms hinges on the level of uncertainty associated with that answer. We propose different ways of setting the uncertainty threshold for single-inference and multi-inference uncertainty estimation. For single-inference, we adopt a subset of the training data to create a calibration set. The uncertainty threshold is estimated based on the calibration set. For the estimation of uncertainty threshold in multi-inference setting, we do not need to create a calibration set. We simply take the average uncertainty of the answers in the test set as the uncertainty threshold. </p>
+      <p>For the details about uncertainty estimation section in UALA, please refer to our paper.</p>
+    </div>
+  </div>
+</section>
+
+
+<!--Result-->
+<section class="section" id="">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Experiment Results</h2>
+    <div class="item has-text-centered">
+      <caption>The performance of each prompting method and the number of tool calls on 500 HotpotQA instances, 229 StrategyQA instances and 570 MMLU (57 tasks) instances. Bars represent Performance (Exact Match), and the lines represent the number of Tool Calls. Numbers inside bars represent the total number of output tokens. Methods marked with * use backoff. <br></caption>
+      <img src="static/images/results_fullplots.png" alt="Teaser image" class="teaser-image" width="90%">
+      </div>
+
+      <div class="item has-text-centered">
+        <caption> Full results of baselines and our methods on two LLMs. The metric is Exact Match and the number in
+the bracket represents the number of Tool Calls. UALA-S denotes using single-inference uncertainty estimation method and UALA-M
+denotes using multi-inference uncertainty estimation method. Bold shows the best result for each column (oracle results excluded).<br></caption>
+        <img src="static/images/main_result.png" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+<p>(1) CoT outpeforms Standard on HotpotQA, while Standard excels on StrategyQA and MMLU. Self-Consistency consistently enhances results across three datasets and two LLMs. ReAct, when used for every instance, underperforms Standard/CoT/Self-Consistency. With the integration of backoff, ReAct+Backoff shows improvement but is generally still falls behind Self-Consistency, highlighting the benefit of SC's sampling and majority voting as a proxy for capturing uncertainty.</p>
+
+<p>(2) UALA-S significantly betters ReAct's performance, cutting tool use by over half, and surpasses Standard/CoT across all datasets. UALA-M achieves similar performance to UALA-S but with increased tool use. UALA-S+Backoff outperforms ReAct+Backoff and often exceeds Self-Consistency with UALA-M+Backoff delivering the best results in all settings on three datasets.</p>
+
+<p>(3) The largest gain in improvement by UALA is observed for HotpotQA (free-form), followed by StrategyQA (binary), and MMLU (multiple choice). This is expected as the free-form response space is much larger and diverse, compared with MCQ type of questions. The difference in gain could be explained in terms of the amount of uncertainty divergence between correct and incorrect answers in each task.</p>
+
+<p>(4) The average (single-inference and multi-inference) EM improvement for ChatGPT with LLaMA2-70B compared to Standard/CoT results: ChatGPT gains 11.7% and LLaMA2-70B gains  8.9%. This could be an indication that ChatGPT is likely to produce better-calibrated probability estimates, leading to a more reliable uncertainty estimation on training set that generalizes to test set. This could be an artefact of the two models' difference in size and training protocol. </p>
+
+<p>(5) The results from UALA-S+Oracle underscore an additional aspect of the value of uncertainty. This feature is particularly crucial in sensitive domains, as it can deter the agent from generating incorrect responses. Instead of risking an erroneous answer, the agent defers to human (we simulate this by using gold answer) when the response uncertainty is still high after tool activation.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+
+</div>
+</section>
+
+<!-- Example -->
+<section class="section" id="example">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Analysis</h2>
+    <h3 class="title">Inference Cost</h3>
+    <div class="item has-text-centered">
+      <caption> The number of output tokens and tool calls per method.<br></caption>
+      <img src="static/images/tokens_calls_combined.png" alt="Teaser image" class="teaser-image" width="90%">
+      </div>
+      <p>ReAct consumes substantially more (5×) output tokens than CoT. Compared with ReAct, UALA-S reduces the number of output tokens by more than 65%. UALA-M consumes more output tokens as it relies on multiple inference. Both UALA methods can substantially reduce tool calls more than 50% compared with ReAct, making them much more resource-efficient.</p>
+    <!-- insert two figures data_scale and data_type side by side-->
+    <!-- <div class="columns is-centered">
+      <div style="width: 30%;">
+        <div class="item has-text-centered">
+          <img src="static/images/answer_uncertainty.pdf" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+      </div>
+      <div style="width: 70%;">
+        <div class="item has-text-centered">
+          <img src="static/images/tokens_calls_combined.pdf" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+      </div>
+  </div> -->
+
+  <table class="tg">
+
+  <thead>
+    <tr>
+      <th></th>
+      <th>Standard</th>
+      <th>CoT</th>
+      <th>ReAct</th>
+      <th>UALA-S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ChatGPT</td>
+      <td>0.5s/it</td>
+      <td>1s/it</td>
+      <td>12s/it</td>
+      <td>3s/it</td>
+    </tr>
+    <tr>
+      <td>LLaMA2-70B</td>
+      <td>50s/it</td>
+      <td>50s/it</td>
+      <td>180s/it</td>
+      <td>70s/it</td>
+    </tr>
+    <tr>
+      <td>LLaMA2-13B</td>
+      <td>25s/it</td>
+      <td>25s/it</td>
+      <td>120s/it</td>
+      <td>45s/it</td>
+    </tr>
+    <tr>
+      <td>LLaMA2-7B</td>
+      <td>20s/it</td>
+      <td>20s/it</td>
+      <td>100s/it</td>
+      <td>35s/it</td>
+    </tr>
+  </tr>
+  <tr>
+  </tbody>
+  <caption>The average inference time per instance (seconds/iteration) of methods for HotpotQA. LLaMA2 inference uses a single A40.<br></caption>
+  </table>
+
+  <p>Standard and CoT prompting methods do not involve an external tool call, hence faster inference time compared to other methods. As indicated, UALA-S given its selective tool call, has a much lower inference time compared with ReAct. This highlights a practical benefit of using uncertainty to reduce the number of token usage and tool calls, while still providing a significant gain in performance.</p>
+<h3 class="title">Answer Uncertainty Visualisation</h3>
+  <div class="item has-text-centered">
+    <caption> The visualisation (boxplot) of uncertainty range for correct and incorrect answers of three datasets on ChatGPT. <br></caption>
+    <img src="static/images/answer_uncertainty_boxplot.png" alt="Teaser image" class="teaser-image" width="60%">
+  </div>
+
+  <p>In both single-inference and multi-inference settings, correct answers consistently exhibit lower uncertainty compared to incorrect ones. This difference is statistically significant. When calculating the difference between the average uncertainty of correct and incorrect answers we observe the largest difference to belong to HotpotQA, followed by StrategyQA, and MMLU. This explains why the gain from UALA follows the same pattern in the main results.</p>
+
+  <!-- <table class="tg">
+  <thead>
+    <tr>
+      <th>Methods</th>
+      <th>EM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CoT</td>
+      <td>34.8(0)</td>
+    </tr>
+    <tr>
+      <td>CRITIC</td>
+      <td>41.0(1,500)</td>
+    </tr>
+    <tr>
+      <td>CRITIC w/o Tool</td>
+      <td>35.6(1,500)</td>
+    </tr>
+    <tr>
+      <td>UALA-S-CRITIC</td>
+      <td>39.0(597)</td>
+    </tr>
+    <tr>
+      <td>UALA-S-CRITIC w/o Tool</td>
+      <td>38.0(597)</td>
+    </tr>
+    <tr>
+      <td>UALA-M-CRITIC</td>
+      <td>40.6(795)</td>
+    </tr>
+    <tr>
+      <td>UALA-M-CRITIC w/o Tool</td>
+      <td>37.4(795)</td>
+    </tr>
+  </tbody> -->
+  <!-- </table> -->
+
+<h3 class="title">Language Agent Fine-tuning vs. UALA</h3>
+    <table class="tg">
+    <thead>
+      <tr>
+        <th>Tasks</th>
+        <th>Methods</th>
+        <th>Training Size</th>
+        <th>ChatGPT</th>
+        <th>LLaMA2-70B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">HotpotQA</td>
+        <td>FireAct</td>
+        <td>162</td>
+        <td>27.8</td>
+        <td>27.8</td>
+      </tr>
+      <tr>
+        <td>FireAct</td>
+        <td>512</td>
+        <td>33.8</td>
+        <td>30.0</td>
+      </tr>
+      <tr>
+        <td>ReAct</td>
+        <td>No fine-tuning</td>
+        <td>32.0</td>
+        <td>32.4</td>
+      </tr>
+      <tr>
+        <td>UALA-S</td>
+        <td>No fine-tuning</td>
+        <td><b>38.2</b></td>
+        <td><b>36.4</b></td>
+      </tr>
+      <tr>
+        <td rowspan="4">StrategyQA</td>
+        <td>FireAct</td>
+        <td>283</td>
+        <td>60.7</td>
+        <td>63.8</td>
+      </tr>
+      <tr>
+        <td>FireAct</td>
+        <td>567</td>
+        <td>64.9</td>
+        <td>64.6</td>
+      </tr>
+      <tr>
+        <td>ReAct</td>
+        <td>No fine-tuning</td>
+        <td>55.5</td>
+        <td>58.1</td>
+      </tr>
+      <tr>
+        <td>UALA-S</td>
+        <td>No fine-tuning</td>
+        <td><b>65.6</b></td>
+        <td><b>69.0</b></td>
+      </tr>
+    </tr>
+    <tr>
+    </tbody>
+    <caption>Results of FireAct vs. UALA-S. The ReAct and UALA-S results are based on 6-shot and the off-the-shelf LLM backbones.<br></caption>
+    </table>
+        <p>We demonstrate the comparison between UALA-S and fine-tuning language agents following the FireAct setting. For ChatGPT, we use the official GPT-3.5-Turbo fine-tuning API; for LLaMA2-70B, we use LoRA. To have a side-by-side comparison, we use the same 500 training samples used for the calibration set, to construct the fine-tuning data. Mimicking the FireAct setting, we ran the 500 examples using ReAct with ChatGPT, and collected the successful trajectories as the training data for FireAct. This amounted to 162 training examples for HotpotQA and 283 for StrategyQA. In addition, to match the amount of training data as FireAct setting, we also ran an additional 1000 examples to increase the amount of successful training trajectories to 512 for HotpotQA and 567 for StrategyQA.  </p>
+          <p>Interestingly, on HotpotQA using 162 training examples, FireAct under-performs the few-shot (6-shots) ReAct agent, while it outperforms ReAct on StrategyQA using 283 training examples. Increasing the amount of training data to 500+ leads to improvement on both LLMs with fine-tuned ChatGPT-based agents outperforming the ReAct counterpart on both datasets. Our method, UALA-S, achieves the best result without any fine-tuning and using only the 500 samples for creating the calibration set. This capitalises an obvious empirical advantage for utilising uncertainty instead of fine-tuning in the presence of small amount of data.</p>
+      </div>
+    </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{han2023uala,
+      title={Towards Uncertainty-Aware Language Agent},
+      author={Jiuzhou Han and Wray Buntine and Ehsan Shareghi},
+      year={2023},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+
+  <footer class="footer">
+    <!-- add three logo to the footer -->
+    <div class="container is-max-desktop content">
+    <div style="display: flex; justify-content: space-between;">
+      <div style="width: 30%; margin-left: 0px; margin-right: 0px;">
+        <a href="https://www.monash.edu/" target="_blank">
+          <img src="static/images/monash-logo.png" alt="Monash University" width="100%">
+        </a>
+      </div>
+      <div style="width: 40%;">
+        <a href="https://vinuni.edu.vn" target="_blank">
+          <img src="static/images/vin-logo.svg" alt="Vin University" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
